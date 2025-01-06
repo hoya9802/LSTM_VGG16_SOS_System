@@ -15,3 +15,43 @@
  - main.py: 메인 실행 파일
  - train_model.ipynb: LSTM을 이용하여 손동작을 예측하는 모델 학습을 위한 파일
 
+
+### Algorithm Flow
+
+<img width="374" alt="algorithmflow" src="https://github.com/user-attachments/assets/6215ad6c-e0d8-4de8-b3a3-7f6f245d6970" />
+
+### Gesture dataset
+
+![datacollection](https://github.com/user-attachments/assets/c4cbacd5-032b-48b4-bca7-8901911d0198)
+
+ - MediaPipe을 이용하여 사진과 같이 손바닥의 좌표를 nparray형태로 저장
+
+### Gesture dataset 수집 방법
+
+<img width="343" alt="datacollectioncam" src="https://github.com/user-attachments/assets/6d1cd9c6-6609-4cb1-8745-9ebe15bcc504" />
+
+ - 데이터 수집 방법은 웹캠을 통해 30초마다 1번씩 지정한 횟수만큼 데이터를 수집
+
+### Gesture Model
+
+<img width="524" alt="스크린샷 2025-01-07 오전 1 57 51" src="https://github.com/user-attachments/assets/6c52adbc-777d-45ea-a8c3-cc76a57b6984" />
+
+### Gesture Model Result
+![gestureres](https://github.com/user-attachments/assets/083083b6-01a1-450b-8234-af5096d90e89)
+
+ - Early Stopping을 통해서 epoch 20에서 모델 가중치 데이터를 파일로 저장
+ - Train Acc : 83.33% / Test Acc : 91.67%
+
+### Emotion Model (VGG 16)
+
+참고 논문 : [VGG16 Paper](https://arxiv.org/pdf/1409.1556)
+
+![vgg16](https://github.com/user-attachments/assets/7ef877ef-f514-4e9f-98bb-8430327e15cc)
+
+ - 학습 데이터가 부족하여 추가적인 data augmentation을 진행
+ - 논문에서는 RGB이미지를 사용하지만 여기서는 GRAY스케일을 사용하기 때문에 input data의 dimention을 수정
+ - VGG16 논문에서 B Network 사용
+ - Overfitting을 줄이기 위해 추가적으로 layer 사이에 dropout을 추가
+ - Early Stopping 적용
+ - Train Acc : 65.70% / Test Acc : 74.13%
+
