@@ -55,3 +55,5 @@
  - Early Stopping 적용
  - Train Acc : 65.70% / Test Acc : 74.13%
 
+
+#### 자세한 내용은 해당 [발표자료](https://github.com/user-attachments/files/18322623/IPIU2022_._pdf.pdf)를 참고하세요.
