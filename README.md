@@ -56,4 +56,4 @@
  - Train Acc : 65.70% / Test Acc : 74.13%
 
 
-#### 자세한 내용은 해당 [발표자료](https://github.com/user-attachments/files/18322623/IPIU2022_._pdf.pdf)를 참고하세요.
+#### 추가적인 내용은 [발표자료](https://github.com/user-attachments/files/18322680/IPIU2022_.pdf)를 참고하세요.
