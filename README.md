@@ -2,7 +2,7 @@
 
 논문 : [수신호 인식과 표정인식을 이용한 위험 상황 인지 알고리즘](https://github.com/user-attachments/files/18320088/IPIU2022_Paper.pdf)
 
-### 파일 구조
+## 파일 구조
  - data/: 손동작별(fist, hand out, help, nothing) 손바닥 좌표가 저장되어 있 디렉토리
  - face_data/: 얼굴 표정(angry, happy, neutral, sad, surprise) 관련 파일들이 train dataset과 validation dataset으로 저장된 디렉토리
  - model/: 손동작을 예측하는 LSTM 모델의 가중치 파일이 담겨있는 디렉토리
@@ -16,33 +16,33 @@
  - train_model.ipynb: LSTM을 이용하여 손동작을 예측하는 모델 학습을 위한 파일
 
 
-### Algorithm Flow
+## Algorithm Flow
 
 <img width="374" alt="algorithmflow" src="https://github.com/user-attachments/assets/6215ad6c-e0d8-4de8-b3a3-7f6f245d6970" />
 
-### Gesture dataset
+## Gesture dataset
 
 ![datacollection](https://github.com/user-attachments/assets/c4cbacd5-032b-48b4-bca7-8901911d0198)
 
  - MediaPipe을 이용하여 사진과 같이 손바닥의 좌표를 nparray형태로 저장
 
-### Gesture dataset 수집 방법
+## Gesture dataset 수집 방법
 
 <img width="343" alt="datacollectioncam" src="https://github.com/user-attachments/assets/6d1cd9c6-6609-4cb1-8745-9ebe15bcc504" />
 
  - 데이터 수집 방법은 웹캠을 통해 30초마다 1번씩 지정한 횟수만큼 데이터를 수집
 
-### Gesture Model
+## Gesture Model
 
 <img width="524" alt="스크린샷 2025-01-07 오전 1 57 51" src="https://github.com/user-attachments/assets/6c52adbc-777d-45ea-a8c3-cc76a57b6984" />
 
-### Gesture Model Result
+## Gesture Model Result
 ![gestureres](https://github.com/user-attachments/assets/083083b6-01a1-450b-8234-af5096d90e89)
 
  - Early Stopping을 통해서 epoch 20에서 모델 가중치 데이터를 파일로 저장
  - Train Acc : 83.33% / Test Acc : 91.67%
 
-### Emotion Model (VGG 16)
+## Emotion Model (VGG 16)
 
 참고 논문 : [VGG16 Paper](https://arxiv.org/pdf/1409.1556)
 
@@ -55,8 +55,8 @@
  - Early Stopping 적용
  - Train Acc : 65.70% / Test Acc : 74.13%
 
-### 실행 영상
+## 실행 영상
 ![실행 영상](https://github.com/user-attachments/assets/6fc9590a-8b57-4e77-9561-9ac9f56d3b71)
 
 
-#### IPIU2022 [포스터 발표자료](https://github.com/user-attachments/files/18322680/IPIU2022_.pdf)입니다.
+### IPIU2022 [포스터 발표자료](https://github.com/user-attachments/files/18322680/IPIU2022_.pdf)입니다.
